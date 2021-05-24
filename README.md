@@ -1,4 +1,4 @@
-#  ⚡ ELEKTRA⚡
+>#  ⚡ ELEKTRA⚡
 **An ML powered Electricity Outage prediction tool**
 
 [CHECK LIVE](https://elecktra.uc.r.appspot.com)
@@ -53,26 +53,72 @@ You may go through these guidelines and contribute accordingly:
 
 # How to fork and run Elektra on your local machine 💻:
 
-  * Download and install Python
-  * Download and install Git.
-  * Fork the Repository.
-  * Clone the repository to your local machine `$ git clone https://github.com/<your-github-username>/Elektra.git`
-  * Change directory to Elektra `$ cd Elektra`
-  * Install virtualenv `$ pip3 install virtualenv`
-  * Create a virtual environment `$ virtualenv env -p python`  
-  * Activate the env: `$ source env/bin/activate` (for linux) `> env\Scripts\activate` (for Windows PowerShell)
-  * Install the requirements: `$ pip install -r requirements.txt`
-  * Go to `Elektra\settings.py` and change the username and password of databases as per your own local mysql database. Here is a reference below to where you can find the code:
-    ![Screenshot (129)](https://user-images.githubusercontent.com/71708571/110449895-aa212900-80e8-11eb-9469-84da185b9c13.png)
+1. Download and install Python
+2. Download and install Git.
+3. Fork the Repository.
+4. Clone the repository to your local machine 
+```bash
+git clone https://github.com/<your-github-username>/Elektra.git
+```
 
-    
-    After changing the username and password, create a database named `Elektra` and then continue on to following the steps given below.
-  * Make migrations `$ python manage.py makemigrations`
-  * Migrate the changes to the database `$ python manage.py migrate`
-  * Create admin `$ python manage.py createsuperuser`
-  * Run the server `$ python manage.py runserver`
-  * Open any web browser and then paste the server address to see the webpage working on your local machine
-- Happy Coding 😁
+5. Change directory to Elektra
+```bash
+cd Elektra
+```
+
+6. Install virtualenv
+```bash
+pip3 install virtualenv
+```
+
+7. Create a virtual environment
+```bash
+virtualenv env -p python
+```  
+8. Activate the environment
+  * For linux 
+  ```bash
+  source env/bin/activate
+  ```
+
+  * For windows (Windows PowerShell)
+  ```powershell
+  env\Scripts\activate
+  ```
+
+9. Install the requirements:
+```bash
+pip install -r requirements.txt
+```
+
+10. Go to [Elektra/settings.py](Elecktra/settings.py "link") and change the username and password of databases as per your own local mysql database. Here is a reference below to where you can find the code:
+  ![Screenshot (129)](https://user-images.githubusercontent.com/71708571/110449895-aa212900-80e8-11eb-9469-84da185b9c13.png)
+  
+  <p>After changing the username and password, create a database named `Elektra` and then continue on to following the steps given below.<p>
+
+11. Make migrations
+```bash
+python manage.py makemigrations
+```
+
+12. Migrate the changes to the database
+```bash 
+python manage.py migrate
+```
+
+13. Create admin 
+```bash
+python manage.py createsuperuser
+```
+
+14. Run the server
+```bash
+python manage.py runserver
+```
+
+15. Open any web browser and then paste the server address to see the webpage working on your local machine
+
+<p>Happy Coding 😁</p>
 
 
 ### Deployment ✔️Google Cloud Platform
